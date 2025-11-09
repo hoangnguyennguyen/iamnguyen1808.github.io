@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyen Nguyen - Data Engineer Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <!-- Fallback for Inter font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="text-gray-100 leading-relaxed">
+
+    <!-- Sidebar Overlay (for mobile) -->
+    <div id="sidebar-overlay" class="fixed inset-0 bg-black/60 z-40 hidden md:hidden"></div>
+
+    <!-- Side Navigation Bar -->
+    <nav id="sidebar" class="group fixed inset-y-0 left-0 z-50 w-64 bg-gray-900 md:bg-gray-900/50 md:backdrop-blur-sm border-r border-gray-700/50 md:border-r-0 md:shadow-lg transform -translate-x-full md:translate-x-[-14.5rem] md:hover:translate-x-0 transition-transform duration-300 ease-in-out overflow-y-auto md:inset-y-auto md:top-1/2 md:-translate-y-1/2 md:rounded-lg md:max-h-[80vh]">
+        
+        <!-- Hover Indicator Tab (Desktop Only) -->
+        <div class="hidden md:flex items-center justify-center absolute top-1/2 -translate-y-1/2 right-0 w-6 h-20 bg-gray-700/80 rounded-r-lg transition-opacity duration-300 group-hover:opacity-0 pointer-events-none">
+            <span class="lucide-icon text-gray-200 animate-pulse" data-lucide="chevrons-right"></span>
+        </div>
+        
+        <div class="p-6">
+            
+            <ul class="space-y-3">
+                <li>
+                    <a href="#experience" class="sidebar-link flex items-center space-x-3 px-4 py-3 text-gray-300 hover:bg-gray-700 hover:text-white rounded-lg transition-colors">
+                        <span class="lucide-icon" data-lucide="briefcase"></span>
+                        <span>Experience</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#certification" class="sidebar-link flex items-center space-x-3 px-4 py-3 text-gray-300 hover:bg-gray-700 hover:text-white rounded-lg transition-colors">
+                        <span class="lucide-icon" data-lucide="award"></span>
+                        <span>Certification</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#projects" class="sidebar-link flex items-center space-x-3 px-4 py-3 text-gray-300 hover:bg-gray-700 hover:text-white rounded-lg transition-colors">
+                        <span class="lucide-icon" data-lucide="clipboard-check"></span>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#skills" class="sidebar-link flex items-center space-x-3 px-4 py-3 text-gray-300 hover:bg-gray-700 hover:text-white rounded-lg transition-colors">
+                        <span class="lucide-icon" data-lucide="layers"></span>
+                        <span>Skills</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" class="sidebar-link flex items-center space-x-3 px-4 py-3 text-gray-300 hover:bg-gray-700 hover:text-white rounded-lg transition-colors">
+                        <span class="lucide-icon" data-lucide="mail"></span>
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <div style="background-color: #111827; min-height: 100vh;">
+        <!-- Header / Top Bar -->
+        <header class="bg-gray-900/80 backdrop-blur-md sticky top-0 z-30 w-full border-b border-gray-700/50">
+            <div class="flex justify-between items-center h-16 px-4 sm:px-6 lg:px-8">
+                <!-- Mobile Nav Button -->
+                <button id="sidebar-toggle-button" class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
+                    <span class="sr-only">Open main menu</span>
+                    <svg id="menu-icon-open" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                    <svg id="menu-icon-close" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
+                <!-- Logo / Name -->
+                <a href="#" class="text-2xl font-bold text-white hover:text-blue-400 transition-colors ml-2 md:ml-0">
+                    Nguyen Nguyen
+                </a>
+                
+                <!-- About Me Button -->
+                <a href="#about" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors ml-auto">
+                    About Me
+                </a>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+
+            <!-- Hero / About Section -->
+            <section id="about" class="flex flex-col md:flex-row items-center md:space-x-12 mb-24">
+                <!-- Profile Image Placeholder -->
+                <div class="w-48 h-48 md:w-64 md:h-64 rounded-full bg-gray-700 flex-shrink-0 mb-8 md:mb-0 shadow-lg border-4 border-gray-800">
+                    <img 
+                        src="https://placehold.co/256x256/374151/E5E7EB?text=Nguyen+Nguyen"
+                        alt="Nguyen Nguyen" 
+                        class="w-full h-full rounded-full object-cover"
+                        onerror="this.src='https://placehold.co/256x256/374151/E5E7EB?text=Profile+Photo'"
+                    >
+                </div>
+                <!-- Bio -->
+                <div class="text-center md:text-left">
+                    <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">
+                        Hi, I'm Nguyen Hoang Nguyen
+                    </h1>
+                    <p class="text-2xl text-blue-400 font-medium mb-6">
+                        Data Engineer
+                    </p>
+                    <p class="text-lg text-gray-300 mb-8 max-w-2xl">
+                        I build scalable and efficient data pipelines that empower businesses to make data-driven decisions. With 5+ years of experience in cloud environments and big data technologies, I transform raw data into actionable insights.
+                    </p>
+                    <div class="flex justify-center md:justify-start space-x-4">
+                        <a href="#projects" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md text-lg font-medium transition-colors">
+                            View My Work
+                        </a>
+                        <a href="https://placehold.co/1x1" target="_blank" rel="noopener noreferrer" class="bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-md text-lg font-medium transition-colors">
+                            View Resume (PDF)
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience & Education Timeline -->
+            <section id="experience" class="mb-24">
+                <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-12">
+                    Experience & Education
+                </h2>
+                
+                <div class="max-w-3xl mx-auto">
+                    <!-- Timeline Item: Work -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-line"></div>
+                        <p class="text-sm text-blue-400 mb-1">2021 - Present</p>
+                        <h3 class="text-xl font-semibold text-white mb-1">Senior Data Engineer</h3>
+                        <p class="text-lg text-gray-400 mb-3">TechCorp Solutions Inc.</p>
+                        <ul class="list-disc list-outside text-gray-300 space-y-2 ml-5">
+                            <li>Designed and implemented a real-time streaming analytics platform using Kafka, Spark Streaming, and GCP Pub/Sub.</li>
+                            <li>Lead the migration of a 20TB on-premise Hadoop cluster to Google BigQuery, reducing query times by 70%.</li>
+                            <li>Developed and maintain 50+ data orchestration pipelines using Airflow and dbt, ensuring 99.9% data uptime.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Timeline Item: Work -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-line"></div>
+                        <p class="text-sm text-blue-400 mb-1">2018 - 2021</p>
+                        <h3 class="text-xl font-semibold text-white mb-1">Data Engineer</h3>
+                        <p class="text-lg text-gray-400 mb-3">DataSolutions Ltd.</p>
+                        <ul class="list-disc list-outside text-gray-300 space-y-2 ml-5">
+                            <li>Built and automated ETL pipelines from various sources (APIs, SQL databases, S3) into an AWS Redshift data warehouse.</li>
+                            <li>Collaborated with data scientists to productionize machine learning models, creating data feeds and monitoring pipelines.</li>
+                            <li>Wrote complex SQL queries and optimized database performance for BI tools like Tableau.</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Timeline Item: Education -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-line"></div>
+                        <p class="text-sm text-blue-400 mb-1">2016 - 2018</p>
+                        <h3 class="text-xl font-semibold text-white mb-1">M.S. in Computer Science (Data Science Track)</h3>
+                        <p class="text-lg text-gray-400 mb-3">Georgia Institute of Technology</p>
+                    </div>
+                    
+                    <!-- Timeline Item: Education -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-line"></div>
+                        <p class="text-sm text-blue-400 mb-1">2012 - 2016</p>
+                        <h3 class="text-xl font-semibold text-white mb-1">B.S. in Information Systems</h3>
+                        <p class="text-lg text-gray-400 mb-3">Fictional University</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- NEW Certification Section -->
+            <section id="certification" class="mb-24">
+                <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-12">
+                    Certifications
+                </h2>
+                <div class="max-w-3xl mx-auto">
+                    <div class="bg-gray-800 rounded-lg shadow-xl overflow-hidden md:flex md:items-center">
+                        <div class="md:flex-shrink-0">
+                            <div class="bg-gray-700 md:w-48 h-48 flex items-center justify-center">
+                                <span class="lucide-icon" data-lucide="award" class="w-24 h-24 text-blue-400"></span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-sm text-blue-400 mb-1">Issued 2020</p>
+                            <h3 class="text-2xl font-semibold text-white mb-2">Google Cloud Certified - Professional Data Engineer</h3>
+                            <p class="text-lg text-gray-400 mb-4">Google Cloud</p>
+                            <p class="text-gray-300">Demonstrated proficiency in designing, building, operationalizing, and securing data processing systems on GCP.</p>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 font-medium inline-flex items-center mt-4">
+                                View Credential
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Add more certification cards here if needed -->
+                </div>
+            </section>
+
+            <!-- Projects / Checkpoints -->
+            <section id="projects" class="mb-24">
+                <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-12">
+                    Key Projects (Checkpoints)
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project 1 -->
+                    <div class="bg-gray-800 rounded-lg shadow-xl overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img 
+                            src="https://placehold.co/600x400/1F2937/9CA3AF?text=Project+Thumbnail+1" 
+                            alt="Project 1 Thumbnail" 
+                            class="w-full h-48 object-cover"
+                            onerror="this.src='https://placehold.co/600x400/1F2937/9CA3AF?text=Project+1'"
+                        >
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-white mb-3">Real-time Analytics Dashboard</h3>
+                            <p class="text-gray-300 mb-4">
+                                A fault-tolerant streaming pipeline processing 1M+ events/min from Kafka, analyzed with Spark Streaming, and visualized in real-time.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-900/50 text-blue-300 text-xs font-medium px-2.5 py-0.5 rounded-full">Kafka</span>
+                                <span class="bg-blue-900/50 text-blue-300 text-xs font-medium px-2.5 py-0.5 rounded-full">Spark Streaming</span>
+                                <span class="bg-blue-900/50 text-blue-300 text-xs font-medium px-2.5 py-0.5 rounded-full">Druid</span>
+                                <span class="bg-blue-900/50 text-blue-300 text-xs font-medium px-2.5 py-0.5 rounded-full">GCP</span>
+                            </div>
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 font-medium inline-flex items-center">
+                                View on GitHub
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="bg-gray-800 rounded-lg shadow-xl overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img 
+                            src="https://placehold.co/600x400/1F2937/9CA3AF?text=Project+Thumbnail+2" 
+                            alt="Project 2 Thumbnail" 
+                            class="w-full h-48 object-cover"
+                            onerror="this.src='https://placehold.co/600x400/1F2937/9CA3AF?text=Project+2'"
+                        >
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-white mb-3">Cloud DWH & dbt Orchestration</h3>
+                            <p class="text-gray-300 mb-4">
+                                Automated ELT pipelines using Airflow and dbt for a scalable BigQuery data warehouse, supporting all core business analytics.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-900/50 text-blue-300 text-xs font-medium px-2.5 py-0.5 rounded-full">Airflow</span>
+                                <span class="bg-blue-900/50 text-blue-300 text-xs font-medium px-2.5 py-0.5 rounded-full">dbt</span>
+                                <span class="bg-blue-900/50 text-blue-300 text-xs font-medium px-2.5 py-0.5 rounded-full">BigQuery</span>
+                                <span class="bg-blue-900/50 text-blue-300 text-xs font-medium px-2.5 py-0.5 rounded-full">Python</span>
+                                <span class="bg-blue-900/50 text-blue-300 text-xs font-medium px-2.5 py-0.5 rounded-full">SQL</span>
+                            </div>
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 font-medium inline-flex items-center">
+                                View on GitHub
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="bg-gray-800 rounded-lg shadow-xl overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img 
+                            src="https://placehold.co/600x400/1F2937/9CA3AF?text=Project+Thumbnail+3" 
+                            alt="Project 3 Thumbnail" 
+                            class="w-full h-48 object-cover"
+                            onerror="this.src='https.placehold.co/600x400/1F2937/9CA3AF?text=Project+3'"
+                        >
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-white mb-3">ML Pipeline Automation</h3>
+                            <p class="text-gray-300 mb-4">
+                                End-to-end MLOps pipeline for feature engineering, model training, and batch scoring, using Kubeflow, Docker, and S3.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-900/50 text-blue-300 text-xs font-medium px-2.5 py-0.5 rounded-full">Kubeflow</span>
+                                <span class="bg-blue-900/50 text-blue-300 text-xs font-medium px-2.5 py-0.5 rounded-full">Docker</span>
+                                <span class="bg-blue-900/50 text-blue-300 text-xs font-medium px-2.5 py-0.5 rounded-full">Kubernetes</span>
+                                <span class="bg-blue-900/50 text-blue-300 text-xs font-medium px-2.5 py-0.5 rounded-full">AWS</span>
+                                <span class="bg-blue-900/50 text-blue-300 text-xs font-medium px-2.5 py-0.5 rounded-full">scikit-learn</span>
+                            </div>
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 font-medium inline-flex items-center">
+                                View on GitHub
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Skills Section -->
+            <section id="skills" class="mb-24">
+                <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-12">
+                    Technical Skills
+                </h2>
+                <div class="max-w-4xl mx-auto bg-gray-800 rounded-lg shadow-xl p-8">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                        <!-- Category 1 -->
+                        <div>
+                            <h3 class="text-xl font-semibold text-white mb-4 border-b-2 border-blue-500 pb-2">Languages</h3>
+                            <ul class="space-y-2 text-gray-300">
+                                <li>Python</li>
+                                <li>SQL</li>
+                                <li>Java</li>
+                                <li>Scala (Basic)</li>
+                            </ul>
+                        </div>
+                        <!-- Category 2 -->
+                        <div>
+                            <h3 class="text-xl font-semibold text-white mb-4 border-b-2 border-blue-500 pb-2">Big Data & Stream</h3>
+                            <ul class="space-y-2 text-gray-300">
+                                <li>Apache Spark</li>
+                                <li>Apache Kafka</li>
+                                <li>Apache Airflow</li>
+                                <li>dbt (Data Build Tool)</li>
+                            </ul>
+                        </div>
+                        <!-- Category 3 -->
+                        <div>
+                            <h3 class="text-xl font-semibold text-white mb-4 border-b-2 border-blue-500 pb-2">Databases</h3>
+                            <ul class="space-y-2 text-gray-300">
+                                <li>BigQuery</li>
+                                <li>Snowflake</li>
+                                <li>AWS Redshift</li>
+                                <li>PostgreSQL</li>
+                            </ul>
+                        </div>
+                        <!-- Category 4 -->
+                        <div>
+                            <h3 class="text-xl font-semibold text-white mb-4 border-b-2 border-blue-500 pb-2">Cloud & DevOps</h3>
+                            <ul class="space-y-2 text-gray-300">
+                                <li>GCP</li>
+                                <li>AWS</li>
+                                <li>Docker</li>
+                                <li>Kubernetes</li>
+                                <li>Terraform</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Contact Section -->
+            <section id="contact" class="text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+                    Get In Touch
+                </h2>
+                <p class="text-lg text-gray-300 max-w-xl mx-auto mb-8">
+                    I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+                </p>
+                <div class="flex justify-center space-x-6">
+                    <a href="mailto:hoangnguyennguyen0408@gmail.com" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md text-lg font-medium transition-colors inline-flex items-center">
+                        <span class="lucide-icon" data-lucide="mail"></span>
+                        <span class="ml-2">Email Me</span>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-400 p-3 bg-gray-800 rounded-full transition-colors">
+                        <span class="sr-only">LinkedIn</span>
+                        <span class="lucide-icon" data-lucide="linkedin"></span>
+                    </a>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-400 p-3 bg-gray-800 rounded-full transition-colors">
+                        <span class="sr-only">GitHub</span>
+                        <span class="lucide-icon" data-lucide="github"></span>
+                    </a>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="border-t border-gray-700/50 mt-20">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center text-gray-500">
+                <p>&copy; <span id="current-year"></span> Nguyen Nguyen. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="index.js"></script>
+
+</body>
+</html>
