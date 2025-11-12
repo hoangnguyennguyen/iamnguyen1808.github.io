@@ -21,7 +21,7 @@
     <nav id="sidebar" class="group fixed inset-y-0 left-0 z-50 w-64 bg-gray-900 md:bg-gray-900/50 md:backdrop-blur-sm border-r border-gray-700/50 md:border-r-0 md:shadow-lg transform -translate-x-full md:translate-x-[-14.5rem] md:hover:translate-x-0 transition-transform duration-300 ease-in-out overflow-y-auto md:inset-y-auto md:top-1/2 md:-translate-y-1/2 md:rounded-lg md:max-h-[80vh]">
         
         <!-- Hover Indicator Tab (Desktop Only) -->
-        <div class="hidden md:flex items-center justify-center absolute top-1/2 -translate-y-1/2 right-0 w-6 h-20 bg-gray-700/80 rounded-r-lg transition-opacity duration-300 group-hover:opacity-0 pointer-events-none">
+    <div class="hidden md:flex items-center justify-center absolute top-1/2 -translate-y-1/2 right-0 w-6 h-20 bg-gray-700/80 rounded-r-lg transition-opacity duration-300 group-hover:opacity-0">
             <span class="lucide-icon text-gray-200 animate-pulse" data-lucide="chevrons-right"></span>
         </div>
         
@@ -96,9 +96,9 @@
             <!-- Hero / About Section -->
             <section id="about" class="flex flex-col md:flex-row items-center md:space-x-12 mb-24">
                 <!-- Profile Image Placeholder -->
-                <div class="w-48 h-48 md:w-64 md:h-64 rounded-full bg-gray-700 flex-shrink-0 mb-8 md:mb-0 shadow-lg border-4 border-gray-800">
+                <div class="w-48 h-48 md:w-48 md:h-64 rounded-full bg-gray-700 flex-shrink-0 mb-8 md:mb-0 shadow-lg border-4 border-gray-800">
                     <img 
-                        src="https://placehold.co/256x256/374151/E5E7EB?text=Nguyen+Nguyen"
+                        src="assets/Avatar.jpg"
                         alt="Nguyen Nguyen" 
                         class="w-full h-full rounded-full object-cover"
                         onerror="this.src='https://placehold.co/256x256/374151/E5E7EB?text=Profile+Photo'"
@@ -133,50 +133,74 @@
                 </h2>
                 
                 <div class="max-w-3xl mx-auto">
+                    <!-- FSoft -->
                     <!-- Timeline Item: Work -->
                     <div class="timeline-item">
                         <div class="timeline-marker"></div>
                         <div class="timeline-line"></div>
-                        <p class="text-sm text-blue-400 mb-1">2021 - Present</p>
-                        <h3 class="text-xl font-semibold text-white mb-1">Senior Data Engineer</h3>
-                        <p class="text-lg text-gray-400 mb-3">TechCorp Solutions Inc.</p>
-                        <ul class="list-disc list-outside text-gray-300 space-y-2 ml-5">
-                            <li>Designed and implemented a real-time streaming analytics platform using Kafka, Spark Streaming, and GCP Pub/Sub.</li>
-                            <li>Lead the migration of a 20TB on-premise Hadoop cluster to Google BigQuery, reducing query times by 70%.</li>
-                            <li>Developed and maintain 50+ data orchestration pipelines using Airflow and dbt, ensuring 99.9% data uptime.</li>
-                        </ul>
+                        <p class="text-sm text-blue-400 mb-1">8/2025 - Present</p>
+                        <p class="text-lg font-semibold text-white mb-1">FPT Software</p>
+                        <p class="text-gray-400 mb-3">Leading IT services provider in Vietnam, specializing in software development, digital transformation, and technology consulting.</p>
+
+                        <!-- Projects -->
+                        <div class="space-y-4 ml-5">
+                            <div>
+                                <div class="flex justify-between items-center mb-1">
+                                    <h4 class="text-base font-bold text-blue-400">Project: Cox Automotive</h4>
+                                    <span class="text-xs text-gray-400">08/2025 &ndash; Present</span>
+                                </div>
+                                <p class="text-sm text-gray-300 mb-1">Domain: Logistics</p>
+                                <p class="text-sm text-gray-300 mb-1">Role: Associate Analytics Engineer</p>
+                                <ul class="list-disc list-outside text-gray-300 space-y-2">
+                                    <li>Designed and implemented a real-time streaming analytics platform using Kafka, Spark Streaming, and GCP Pub/Sub.</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- Timeline Item: Work -->
+                    <!-- Long Chau -->
                     <div class="timeline-item">
                         <div class="timeline-marker"></div>
                         <div class="timeline-line"></div>
-                        <p class="text-sm text-blue-400 mb-1">2018 - 2021</p>
-                        <h3 class="text-xl font-semibold text-white mb-1">Data Engineer</h3>
-                        <p class="text-lg text-gray-400 mb-3">DataSolutions Ltd.</p>
-                        <ul class="list-disc list-outside text-gray-300 space-y-2 ml-5">
-                            <li>Built and automated ETL pipelines from various sources (APIs, SQL databases, S3) into an AWS Redshift data warehouse.</li>
-                            <li>Collaborated with data scientists to productionize machine learning models, creating data feeds and monitoring pipelines.</li>
-                            <li>Wrote complex SQL queries and optimized database performance for BI tools like Tableau.</li>
-                        </ul>
+                        <p class="text-sm text-blue-400 mb-1">7/2023 - 8/2025</p>
+                        <p class="text-lg font-semibold text-white mb-1">FPT Pharma Long Chau</p>
+                        <p class="text-gray-400 mb-3">Major pharmacy chain in Vietnam, providing pharmaceutical products and healthcare services nationwide.</p>
+
+                        <!-- Projects -->
+                        <div class="space-y-4 ml-5">
+                            <div>
+                                <div class="flex justify-between items-center mb-1">
+                                    <h4 class="text-base font-bold text-blue-400">Project: Customer Experience</h4>
+                                    <span class="text-xs text-gray-400">07/2023 &ndash; 12/2023</span>
+                                </div>
+                                <p class="text-sm text-gray-300 mb-1">Domain: Data Integration</p>
+                                <p class="text-sm text-gray-300 mb-1">Role: Fresher Data Engineer</p>
+                                <ul class="list-disc list-outside text-gray-300 space-y-2">
+                                    <li>Built and automated ETL pipelines from various sources (APIs, SQL databases, S3) into an AWS Redshift data warehouse.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="flex justify-between items-center mb-1">
+                                    <h4 class="text-base font-bold text-blue-400">Project: Vaccine Operation</h4>
+                                    <span class="text-xs text-gray-400">01/2024 &ndash; 06/2024</span>
+                                </div>
+                                <p class="text-sm text-gray-300 mb-1">Domain: Machine Learning Operations</p>
+                                <p class="text-sm text-gray-300 mb-1">Role: Data Engineer</p>
+                                <ul class="list-disc list-outside text-gray-300 space-y-2">
+                                    <li>Collaborated with data scientists to productionize machine learning models, creating data feeds and monitoring pipelines.</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                     
                     <!-- Timeline Item: Education -->
                     <div class="timeline-item">
                         <div class="timeline-marker"></div>
                         <div class="timeline-line"></div>
-                        <p class="text-sm text-blue-400 mb-1">2016 - 2018</p>
-                        <h3 class="text-xl font-semibold text-white mb-1">M.S. in Computer Science (Data Science Track)</h3>
-                        <p class="text-lg text-gray-400 mb-3">Georgia Institute of Technology</p>
-                    </div>
-                    
-                    <!-- Timeline Item: Education -->
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-line"></div>
-                        <p class="text-sm text-blue-400 mb-1">2012 - 2016</p>
-                        <h3 class="text-xl font-semibold text-white mb-1">B.S. in Information Systems</h3>
-                        <p class="text-lg text-gray-400 mb-3">Fictional University</p>
+                        <p class="text-sm text-blue-400 mb-1">2019 - 2023</p>
+                        <h3 class="text-xl font-semibold text-white mb-1">B.S. in Mathematics and Computer Science</h3>
+                        <p class="text-lg text-gray-400 mb-3">University of Science, Vietnam National University</p>
                     </div>
                 </div>
             </section>
@@ -302,8 +326,8 @@
                 <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-12">
                     Technical Skills
                 </h2>
-                <div class="max-w-4xl mx-auto bg-gray-800 rounded-lg shadow-xl p-8">
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="max-w-6xl mx-auto bg-gray-800 rounded-lg shadow-xl p-8">
+                    <div class="grid grid-cols-2 md:grid-cols-5 gap-8">
                         <!-- Category 1 -->
                         <div>
                             <h3 class="text-xl font-semibold text-white mb-4 border-b-2 border-blue-500 pb-2">Languages</h3>
@@ -326,12 +350,11 @@
                         </div>
                         <!-- Category 3 -->
                         <div>
-                            <h3 class="text-xl font-semibold text-white mb-4 border-b-2 border-blue-500 pb-2">Databases</h3>
+                            <h3 class="text-xl font-semibold text-white mb-4 border-b-2 border-blue-500 pb-2">Data Platform</h3>
                             <ul class="space-y-2 text-gray-300">
-                                <li>BigQuery</li>
                                 <li>Snowflake</li>
-                                <li>AWS Redshift</li>
-                                <li>PostgreSQL</li>
+                                <li>Databricks</li>
+                                <li>Apache Iceberg</li>
                             </ul>
                         </div>
                         <!-- Category 4 -->
@@ -340,9 +363,17 @@
                             <ul class="space-y-2 text-gray-300">
                                 <li>GCP</li>
                                 <li>AWS</li>
-                                <li>Docker</li>
-                                <li>Kubernetes</li>
                                 <li>Terraform</li>
+                            </ul>
+                        </div>
+
+                        <!-- Category 5 -->
+                        <div>
+                            <h3 class="text-xl font-semibold text-white mb-4 border-b-2 border-blue-500 pb-2">Orchestration</h3>
+                            <ul class="space-y-2 text-gray-300">
+                                <li>Apache Airflow</li>
+                                <li>Dagster</li>
+                                <li>Azure Data Factory</li>
                             </ul>
                         </div>
                     </div>
@@ -362,11 +393,11 @@
                         <span class="lucide-icon" data-lucide="mail"></span>
                         <span class="ml-2">Email Me</span>
                     </a>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-400 p-3 bg-gray-800 rounded-full transition-colors">
+                    <a href="https://www.linkedin.com/in/hoangnguyennguyen/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-400 p-3 bg-gray-800 rounded-full transition-colors">
                         <span class="sr-only">LinkedIn</span>
                         <span class="lucide-icon" data-lucide="linkedin"></span>
                     </a>
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-400 p-3 bg-gray-800 rounded-full transition-colors">
+                    <a href="https://github.com/hoangnguyennguyen" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-400 p-3 bg-gray-800 rounded-full transition-colors">
                         <span class="sr-only">GitHub</span>
                         <span class="lucide-icon" data-lucide="github"></span>
                     </a>
